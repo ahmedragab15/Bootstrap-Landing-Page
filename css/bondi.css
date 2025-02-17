@@ -1,0 +1,236 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
+body {
+    font-family: "Roboto", serif;
+}
+
+::selection {
+    background: var(--green-color);
+    color: var(--red-color);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dark-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--green-color);
+}
+
+.main-btn {
+    color: var(--section-color);
+    background: var(--red-color);
+    padding: 0.5rem 1rem;
+}
+
+.main-btn:hover {
+    color: var(--green-color);
+    background: var(--red-color);
+}
+
+.main-title::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background: var(--green-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* start navbar */
+.navbar {
+    background: var(--dark-color);
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: var(--green-color) !important;
+}
+
+.navbar .search {
+    border-left: 1px solid var(--green-color);
+}
+
+.navbar .search svg {
+    color: var(--green-color);
+    cursor: pointer;
+}
+
+.navbar .navbar-toggler {
+    color: #fff;
+    font-size: 1.5rem;
+    border-color: #fff;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* end navbar */
+/* start landing */
+.landing {
+    background: url(/imgs/hero.jpg) no-repeat center/ cover;
+    min-height: calc(100vh - 72px);
+}
+
+/* end landing */
+/* start features */
+.features .icon-holder {
+    height: 200px;
+}
+
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-holder .number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+
+.features .icon-holder .icon {
+    font-size: 4rem;
+    color: var(--green-color);
+}
+
+.features .feat h4 {
+    color: var(--yellow-color);
+}
+
+/* end features */
+/* start our-work */
+.our-work {
+    background: var(--section-color);
+}
+
+.our-work ul li {
+    cursor: pointer;
+}
+
+.our-work ul li.active,
+.our-work ul li:hover {
+    background: var(--red-color);
+    color: var(--section-color);
+}
+
+.our-work .box::before {
+    content: attr(data-work);
+    position: absolute;
+    background: rgb(51 209 204 / 76%);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.5s;
+    font-size: 1.5rem;
+    transform: translateX(-102%);
+}
+
+.our-work .box:hover::before {
+    transform: translateX(0);
+}
+
+.our-work .box.hide {
+    display: none;
+}
+
+/* end our-work */
+/* start stuff */
+.stuff .description {
+    max-width: 500px;
+}
+
+/* end stuff */
+/* start Team-members */
+.Team-members {
+    background: var(--section-color);
+}
+
+.Team-members h2 {
+    color: var(--yellow-color);
+}
+
+.Team-members .box h4 {
+    background: var(--green-color);
+}
+
+/* end Team-members */
+/* start project */
+.project {
+    background: var(--dark-color);
+}
+
+/* end project */
+/* start subscribe */
+.subscribe {
+    background: var(--yellow-color);
+}
+
+.subscribe input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    caret-color: #000;
+}
+
+.subscribe input::placeholder {
+    color: #fff;
+}
+
+.subscribe input[type="submit"] {
+    background: var(--dark-color);
+    color: var(--yellow-color);
+}
+
+/* end subscribe */
+/* start footer */
+footer {
+    background: var(--dark-color);
+}
+
+footer .copyright span:first-of-type {
+    color: var(--green-color);
+}
+
+footer .copyright span:last-of-type {
+    color: var(--yellow-color);
+}
+
+footer .contact ul svg {
+    width: 20px;
+    height: 20px;
+}
+
+footer .facebook {
+    background: #1877f2;
+}
+
+footer .twitter {
+    background: #1da1f2;
+}
+
+footer .linkedin {
+    background: #0077b5;
+}
+
+footer .youtube {
+    background: #ff0000;
+}
+
+/* end footer */
