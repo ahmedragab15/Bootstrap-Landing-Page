@@ -6,7 +6,6 @@ A modern and fully responsive **Landing Page** built with **HTML & Bootstrap**. 
 
 ✅ **Fully Responsive** – Adapts to all screen sizes  
 ✅ **Bootstrap Framework** – Clean and structured layout  
-✅ **Smooth Animations** – Enhances user experience  
 ✅ **Easy to Customize** – Modify colors, text, and sections easily  
 ✅ **SEO-Friendly** – Optimized for search engines  
 ✅ **Fast Performance** – Lightweight and efficient  
