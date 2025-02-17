@@ -81,7 +81,7 @@ body {
 /* end navbar */
 /* start landing */
 .landing {
-    background: url(/imgs/hero.jpg) no-repeat center/ cover;
+    background: var(--dark-color);
     min-height: calc(100vh - 72px);
 }
 
